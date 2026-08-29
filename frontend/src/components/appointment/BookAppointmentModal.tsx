@@ -2,9 +2,9 @@ import React, { useState, useEffect } from 'react';
 import { Modal } from '../common/Modal';
 import { Department, Doctor, TimeSlot, Appointment } from '../../types';
 import { api } from '../../services/api';
-import { useNotification } from '../../contexts/NotificationContext';
 import { Calendar, Clock, Stethoscope, AlertCircle, CheckCircle2, ChevronRight, User, ShieldAlert } from 'lucide-react';
 import { LoadingSpinner } from '../common/LoadingSpinner';
+import { DoctorImage } from '../common/DoctorImage';
 
 interface BookAppointmentModalProps {
   isOpen: boolean;
@@ -249,9 +249,10 @@ export const BookAppointmentModal: React.FC<BookAppointmentModalProps> = ({
           {/* Doctor Info Card if selected */}
           {selectedDoctor && (
             <div className="p-3 bg-teal-50/60 border border-teal-100 rounded-xl flex items-center gap-3">
-              <img
+              <DoctorImage
                 src={selectedDoctor.profile_image}
                 alt={selectedDoctor.full_name}
+                doctorName={selectedDoctor.full_name}
                 className="w-12 h-12 rounded-xl object-cover border border-teal-200"
               />
               <div className="text-xs">

@@ -5,6 +5,7 @@ import { Badge } from '../../components/common/Badge';
 import { Modal } from '../../components/common/Modal';
 import { LoadingSpinner } from '../../components/common/LoadingSpinner';
 import { useNotification } from '../../contexts/NotificationContext';
+import { DoctorImage } from '../../components/common/DoctorImage';
 import { PlusCircle, Stethoscope, Edit, RefreshCw, MapPin, Clock, Award } from 'lucide-react';
 
 export const AdminDoctors: React.FC = () => {
@@ -155,9 +156,10 @@ export const AdminDoctors: React.FC = () => {
             >
               <div className="space-y-4">
                 <div className="flex items-start gap-4">
-                  <img
+                  <DoctorImage
                     src={doc.profile_image}
                     alt={doc.full_name}
+                    doctorName={doc.full_name}
                     className="w-16 h-16 rounded-2xl object-cover border border-slate-200 flex-shrink-0"
                   />
                   <div className="min-w-0 flex-1">

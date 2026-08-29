@@ -19,7 +19,18 @@ const server = http.createServer(app);
 // 1. Security & Middleware
 app.use(
   helmet({
-    crossOriginResourcePolicy: false
+    contentSecurityPolicy: {
+      directives: {
+        defaultSrc: ["'self'"],
+        scriptSrc: ["'self'", "'unsafe-inline'", "'unsafe-eval'"],
+        styleSrc: ["'self'", "'unsafe-inline'", "https://fonts.googleapis.com"],
+        fontSrc: ["'self'", "https://fonts.gstatic.com"],
+        imgSrc: ["'self'", "data:", "blob:", "https://images.unsplash.com", "https://*.unsplash.com", "https://ui-avatars.com"],
+        connectSrc: ["'self'", "ws:", "wss:", "http:", "https:"],
+      }
+    },
+    crossOriginResourcePolicy: false,
+    crossOriginEmbedderPolicy: false
   })
 );
 

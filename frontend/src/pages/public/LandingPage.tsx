@@ -19,6 +19,7 @@ import { api } from '../../services/api';
 import { Doctor, Department } from '../../types';
 import { BookAppointmentModal } from '../../components/appointment/BookAppointmentModal';
 import { useAuth } from '../../contexts/AuthContext';
+import { DoctorImage } from '../../components/common/DoctorImage';
 
 export const LandingPage: React.FC = () => {
   const { isAuthenticated } = useAuth();
@@ -281,9 +282,10 @@ export const LandingPage: React.FC = () => {
               className="bg-white rounded-3xl border border-slate-200/80 p-5 shadow-sm hover:shadow-xl transition group flex flex-col justify-between"
             >
               <div className="space-y-4">
-                <img
+                <DoctorImage
                   src={doc.profile_image}
                   alt={doc.full_name}
+                  doctorName={doc.full_name}
                   className="w-full h-48 rounded-2xl object-cover group-hover:scale-[1.02] transition"
                 />
                 <div>

@@ -7,6 +7,7 @@ import { Badge } from '../../components/common/Badge';
 import { LoadingSpinner } from '../../components/common/LoadingSpinner';
 import { BookAppointmentModal } from '../../components/appointment/BookAppointmentModal';
 import { useAuth } from '../../contexts/AuthContext';
+import { DoctorImage } from '../../components/common/DoctorImage';
 
 export const DoctorsPage: React.FC = () => {
   const [searchParams] = useSearchParams();
@@ -147,9 +148,10 @@ export const DoctorsPage: React.FC = () => {
               <div className="space-y-4">
                 {/* Header */}
                 <div className="flex items-start gap-4">
-                  <img
+                  <DoctorImage
                     src={doc.profile_image}
                     alt={doc.full_name}
+                    doctorName={doc.full_name}
                     className="w-16 h-16 rounded-2xl object-cover border border-slate-200 flex-shrink-0 group-hover:scale-105 transition"
                   />
                   <div className="min-w-0 flex-1">

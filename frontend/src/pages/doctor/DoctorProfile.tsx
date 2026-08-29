@@ -4,6 +4,7 @@ import { Doctor } from '../../types';
 import { useNotification } from '../../contexts/NotificationContext';
 import { LoadingSpinner } from '../../components/common/LoadingSpinner';
 import { Badge } from '../../components/common/Badge';
+import { DoctorImage } from '../../components/common/DoctorImage';
 import { Stethoscope, Calendar, Clock, MapPin, Award, Mail, Phone } from 'lucide-react';
 
 export const DoctorProfile: React.FC = () => {
@@ -66,9 +67,10 @@ export const DoctorProfile: React.FC = () => {
         {/* Left: Summary */}
         <div className="bg-white p-6 rounded-3xl border border-slate-200/80 shadow-sm space-y-6">
           <div className="text-center space-y-3">
-            <img
+            <DoctorImage
               src={doctor?.profile_image}
-              alt={doctor?.full_name}
+              alt={doctor?.full_name || 'Doctor'}
+              doctorName={doctor?.full_name}
               className="w-24 h-24 rounded-3xl object-cover mx-auto ring-4 ring-purple-50 shadow-md"
             />
             <div>

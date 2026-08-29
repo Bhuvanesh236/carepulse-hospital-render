@@ -77,7 +77,7 @@ export async function seedDatabase() {
       qual: 'MD, FACC, Harvard Medical',
       exp: 14,
       phone: '+1 (555) 234-5671',
-      img: 'https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&q=80&w=400',
+      img: '/assets/doctors/dr-sarah.jpg',
       duration: 15,
       room: 'Room 201 (Cardio Wing)',
       bio: 'Board-certified cardiologist specializing in coronary artery disease, preventative cardiovascular wellness, and heart rhythm management.'
@@ -91,7 +91,7 @@ export async function seedDatabase() {
       qual: 'MD, PhD, Johns Hopkins',
       exp: 16,
       phone: '+1 (555) 234-5672',
-      img: 'https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&q=80&w=400',
+      img: '/assets/doctors/dr-robert.jpg',
       duration: 20,
       room: 'Room 304 (Neuro Wing)',
       bio: 'Leading specialist in neurodegenerative treatments, stroke recovery protocols, and advanced EEG diagnostic analysis.'
@@ -105,7 +105,7 @@ export async function seedDatabase() {
       qual: 'MD, FAAP, Stanford University',
       exp: 11,
       phone: '+1 (555) 234-5673',
-      img: 'https://images.unsplash.com/photo-1594824813590-78530e2a3928?auto=format&fit=crop&q=80&w=400',
+      img: '/assets/doctors/dr-emily.jpg',
       duration: 15,
       room: 'Room 105 (Children Wing)',
       bio: 'Compassionate pediatrician devoted to newborn care, childhood developmental milestones, and preventive pediatric health.'
@@ -119,7 +119,7 @@ export async function seedDatabase() {
       qual: 'MD, FAAOS, Mayo Clinic',
       exp: 18,
       phone: '+1 (555) 234-5674',
-      img: 'https://images.unsplash.com/photo-1537368910025-700350fe46c7?auto=format&fit=crop&q=80&w=400',
+      img: '/assets/doctors/dr-marcus.jpg',
       duration: 15,
       room: 'Room 210 (Surgical Wing)',
       bio: 'Pioneering orthopedic surgeon specializing in minimally invasive knee and hip replacements and sports athletic rehabilitation.'
@@ -133,7 +133,7 @@ export async function seedDatabase() {
       qual: 'MD, FAAD, Oxford University',
       exp: 10,
       phone: '+1 (555) 234-5675',
-      img: 'https://images.unsplash.com/photo-1651008376811-b90baee60c1f?auto=format&fit=crop&q=80&w=400',
+      img: '/assets/doctors/dr-aisha.jpg',
       duration: 15,
       room: 'Room 112 (Derm Wing)',
       bio: 'Expert in chronic skin disorders, psoriasis therapies, laser skin treatment, and comprehensive skin oncology screenings.'
@@ -147,7 +147,7 @@ export async function seedDatabase() {
       qual: 'MD, FACP, Columbia University',
       exp: 20,
       phone: '+1 (555) 234-5676',
-      img: 'https://images.unsplash.com/photo-1582750433449-648ed127bb54?auto=format&fit=crop&q=80&w=400',
+      img: '/assets/doctors/dr-james.jpg',
       duration: 15,
       room: 'Room 101 (Primary Care)',
       bio: 'Senior consultant in general medicine, complex internal diagnoses, hypertensive care, and diabetic management.'
@@ -161,7 +161,7 @@ export async function seedDatabase() {
       qual: 'MD, University of Pennsylvania',
       exp: 12,
       phone: '+1 (555) 234-5677',
-      img: 'https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&q=80&w=400',
+      img: '/assets/doctors/dr-linda.jpg',
       duration: 15,
       room: 'Room 203 (Cardio Wing)',
       bio: 'Dedicated cardiologist focusing on advanced non-invasive cardiac imaging, valve diseases, and hypertension therapeutics.'
@@ -175,7 +175,7 @@ export async function seedDatabase() {
       qual: 'MD, Duke University',
       exp: 9,
       phone: '+1 (555) 234-5678',
-      img: 'https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&q=80&w=400',
+      img: '/assets/doctors/dr-alex.jpg',
       duration: 15,
       room: 'Room 306 (Neuro Wing)',
       bio: 'Specialist in neuropathy, peripheral nerve surgery, chronic migraine management, and spinal pain interventions.'
@@ -189,7 +189,7 @@ export async function seedDatabase() {
       qual: 'MD, Boston Children’s Hospital',
       exp: 13,
       phone: '+1 (555) 234-5679',
-      img: 'https://images.unsplash.com/photo-1594824813590-78530e2a3928?auto=format&fit=crop&q=80&w=400',
+      img: '/assets/doctors/dr-chloe.jpg',
       duration: 15,
       room: 'Room 108 (Children Wing)',
       bio: 'Recognized authority on childhood asthma, severe allergic eczema, immunological deficiencies, and food allergy management.'
@@ -203,7 +203,7 @@ export async function seedDatabase() {
       qual: 'MD, Yale University',
       exp: 15,
       phone: '+1 (555) 234-5680',
-      img: 'https://images.unsplash.com/photo-1537368910025-700350fe46c7?auto=format&fit=crop&q=80&w=400',
+      img: '/assets/doctors/dr-kevin.jpg',
       duration: 15,
       room: 'Room 214 (Surgical Wing)',
       bio: 'Orthopedic trauma surgeon specializing in complex spinal reconstruction, disc herniation, and athletic injury repairs.'
@@ -217,7 +217,7 @@ export async function seedDatabase() {
       qual: 'MD, University of Michigan',
       exp: 8,
       phone: '+1 (555) 234-5681',
-      img: 'https://images.unsplash.com/photo-1651008376811-b90baee60c1f?auto=format&fit=crop&q=80&w=400',
+      img: '/assets/doctors/dr-sophia.jpg',
       duration: 15,
       room: 'Room 114 (Derm Wing)',
       bio: 'Dermatologist specializing in skin biopsy, pediatric skin allergies, mole mapping, and acne scar revision.'
@@ -231,7 +231,7 @@ export async function seedDatabase() {
       qual: 'MD, UCLA Medical Center',
       exp: 22,
       phone: '+1 (555) 234-5682',
-      img: 'https://images.unsplash.com/photo-1582750433449-648ed127bb54?auto=format&fit=crop&q=80&w=400',
+      img: '/assets/doctors/dr-daniel.jpg',
       duration: 15,
       room: 'Room 103 (Primary Care)',
       bio: 'Experienced primary care doctor focusing on senior healthcare, polypharmacy review, and metabolic syndrome treatment.'
@@ -284,6 +284,11 @@ export async function seedDatabase() {
           [doc.id, day, d.duration]
         );
       }
+    } else {
+      await db.execute(
+        'UPDATE doctors SET profile_image = ?, room_number = ?, bio = ? WHERE id = ?',
+        [d.img, d.room, d.bio, doc.id]
+      );
     }
     docIdMap[d.code] = doc.id;
   }
