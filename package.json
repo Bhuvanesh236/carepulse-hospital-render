@@ -5,9 +5,9 @@
   "type": "module",
   "main": "backend/dist/server.js",
   "scripts": {
-    "build:frontend": "cd frontend && npm install && npm run build",
-    "build:backend": "cd backend && npm install && npm run build",
-    "build": "npm --prefix frontend install && npm --prefix frontend run build && npm --prefix backend install && npm --prefix backend run build",
+    "build:frontend": "cd frontend && npm install --include=dev && npm run build",
+    "build:backend": "cd backend && npm install --include=dev && npm run build",
+    "build": "npm --prefix frontend install --include=dev && npm --prefix frontend run build && npm --prefix backend install --include=dev && npm --prefix backend run build",
     "start": "node backend/dist/server.js",
     "dev:backend": "npm --prefix backend run dev",
     "dev:frontend": "npm --prefix frontend run dev"
