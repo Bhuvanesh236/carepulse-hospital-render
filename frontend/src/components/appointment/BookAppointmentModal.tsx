@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Modal } from '../common/Modal';
 import { Department, Doctor, TimeSlot, Appointment } from '../../types';
 import { api } from '../../services/api';
+import { useNotification } from '../../contexts/NotificationContext';
 import { Calendar, Clock, Stethoscope, AlertCircle, CheckCircle2, ChevronRight, User, ShieldAlert } from 'lucide-react';
 import { LoadingSpinner } from '../common/LoadingSpinner';
 import { DoctorImage } from '../common/DoctorImage';

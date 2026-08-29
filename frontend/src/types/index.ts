@@ -176,3 +176,11 @@ export interface AuditLogItem {
   ip_address?: string;
   created_at: string;
 }
+
+export interface SystemSetting {
+  id: number;
+  setting_key: string;
+  setting_value: string;
+  description?: string;
+  updated_at?: string;
+}
